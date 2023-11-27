@@ -36,9 +36,23 @@
     <button type="button" class="btn-menu"><span>Menu</span></button>
   </header>
 
-  <div class="row column medium-10 large-8 xxlarge-6">
-    <b class="content" >**Listed below are a few of our unicorns and their rates.**</b>
+  <div style="padding-left: 50%; padding-right: 50%;"class="row column medium-10 large-8 xxlarge-6">
+    <button class="popup" onclick="myFunction()" style="background-color: #f50856; border: none; color: white; 
+      padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block;
+      font-size: 16px; margin: 0.5px 0.5px; cursor: pointer; padding-left: 50px; padding-right: 50px;"> 
+    View Cart </button>
+    <span class="popuptext" id="myPopup">My Cart</span>
+
+
+  <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
   </div>
+
 
   <section class="unicorns-list">
     <div class="row">
